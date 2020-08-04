@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试cors</title>
+<script src="/static/js/jquery.min.js",type="text/javascript"></script>
+</head>
+<body>
+
+
+<button id="btn">测试cors</button>
+
+<script>
+    $(function () {
+
+        $('#btn').click(function () {
+
+            $.ajax({
+                url: 'http://localhost:8000/test_cors_server',
+                type: 'GET',
+                success: function (data) {
+                    console.log()
+                }
+            })
+
+        })
+
+
+    })
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
